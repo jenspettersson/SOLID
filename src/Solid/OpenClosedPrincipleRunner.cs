@@ -6,9 +6,9 @@ using Solid.OpenClosedPrinciple.DiscountRules;
 namespace Solid
 {
     [TestFixture]
-    public class OpenClosedPrincipleRinner
+    public class OpenClosedPrincipleRunner
     {
-        public OpenClosedPrincipleRinner()
+        public OpenClosedPrincipleRunner()
         {
             var discountRules = new List<IDiscountRule>
                 {
