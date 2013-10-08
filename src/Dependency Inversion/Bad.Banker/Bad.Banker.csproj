@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Banker.cs" />
-    <Compile Include="ConsoleLogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

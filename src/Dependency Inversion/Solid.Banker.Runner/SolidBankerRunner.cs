@@ -3,7 +3,7 @@
     using Logging;
     using NUnit.Framework;
 
-    [TestFixture]
+    [TestFixture, Explicit("This is just an example runner")]
     public class SolidBankerRunner
     {
         [Test]
