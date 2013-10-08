@@ -4,7 +4,7 @@
     using NUnit.Framework;
 
     [TestFixture]
-    public class DiscountRuleFiveItemsTests
+    public class DiscountRuleFiveToTenItemsTests
     {
         private DiscountRuleFiveToTenItems _discountRuleFiveToTenItems;
 
@@ -15,8 +15,13 @@
         }
 
         [Test]
-        
-        public void Rule_should_apply_for_five_to_nine_items([Range(5, 9)]int items)
+        public void The_DiscountAmount_should_be_ten_percent()
+        {
+            Assert.AreEqual(10, _discountRuleFiveToTenItems.DiscountAmount);
+        }
+
+        [Test]
+        public void Rule_should_apply_for_five_up_to_nine_items([Range(5, 9)]int items)
         {
             Assert.True(_discountRuleFiveToTenItems.Match(items));
         }

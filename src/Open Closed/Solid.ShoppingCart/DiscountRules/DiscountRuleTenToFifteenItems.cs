@@ -1,6 +1,6 @@
 namespace Solid.ShoppingCart.DiscountRules
 {
-    public class DiscountRuleTenItems : IDiscountRule
+    public class DiscountRuleTenToFifteenItems : IDiscountRule
     {
         public decimal DiscountAmount
         {

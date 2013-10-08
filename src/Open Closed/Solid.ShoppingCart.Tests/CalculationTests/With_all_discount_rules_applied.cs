@@ -16,8 +16,7 @@
             _discountCalculator = new DiscountCalculator(new List<IDiscountRule>
                 {
                     new DiscountRuleFiveToTenItems(),
-                    new DiscountRuleTenToFifteenItems(),
-                    new DiscountRuleFifteenOrMoreItems()
+                    new DiscountRuleTenToFifteenItems()
                 });
         }
 
@@ -33,13 +32,6 @@
         {
             decimal discount = _discountCalculator.Calculate(10);
             Assert.AreEqual(15m, discount);
-        }
-
-        [Test]
-        public void Fifteen_items_should_give_twenty_percent_discount()
-        {
-            decimal discount = _discountCalculator.Calculate(15);
-            Assert.AreEqual(20m, discount);
         }
     }
 }

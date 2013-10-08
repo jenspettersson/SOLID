@@ -44,9 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculationTests\With_all_discount_rules_applied.cs" />
-    <Compile Include="DiscountRulesTests\DiscountRuleFifteenItemsTests.cs" />
-    <Compile Include="DiscountRulesTests\DiscountRuleFiveItemsTests.cs" />
-    <Compile Include="DiscountRulesTests\DiscountRuleTenItemsTests.cs" />
+    <Compile Include="DiscountRulesTests\DiscountRuleFiveToTenItemsTests.cs" />
+    <Compile Include="DiscountRulesTests\DiscountRuleTenToFifteenItemsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoppingCartTests.cs" />
   </ItemGroup>

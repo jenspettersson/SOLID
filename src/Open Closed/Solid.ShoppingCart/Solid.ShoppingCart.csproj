@@ -40,9 +40,8 @@
   <ItemGroup>
     <Compile Include="CartItem.cs" />
     <Compile Include="Calculation\DiscountCalculator.cs" />
-    <Compile Include="DiscountRules\DiscountRuleFifteenItems.cs" />
-    <Compile Include="DiscountRules\DiscountRuleFiveItems.cs" />
-    <Compile Include="DiscountRules\DiscountRuleTenItems.cs" />
+    <Compile Include="DiscountRules\DiscountRuleFiveToTenItems.cs" />
+    <Compile Include="DiscountRules\DiscountRuleTenToFifteenItems.cs" />
     <Compile Include="DiscountRules\IDiscountRule.cs" />
     <Compile Include="Calculation\IDiscountCalculator.cs" />
     <Compile Include="ShoppingCart.cs" />

@@ -23,14 +23,6 @@ namespace Bad.ShoppingCart
             {
                 amount = 15;
             }
-            else if (_items.Count >= 15 && _items.Count < 20)
-            {
-                amount = 20;
-            }
-            else if(_items.Count >= 20)
-            {
-                amount = 25;
-            }
 
             return amount;
         }
