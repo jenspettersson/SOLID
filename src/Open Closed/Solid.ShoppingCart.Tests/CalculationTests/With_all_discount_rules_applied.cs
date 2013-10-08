@@ -15,9 +15,9 @@
         {
             _discountCalculator = new DiscountCalculator(new List<IDiscountRule>
                 {
-                    new DiscountRuleFiveItems(),
-                    new DiscountRuleTenItems(),
-                    new DiscountRuleFifteenItems()
+                    new DiscountRuleFiveToTenItems(),
+                    new DiscountRuleTenToFifteenItems(),
+                    new DiscountRuleFifteenOrMoreItems()
                 });
         }
 

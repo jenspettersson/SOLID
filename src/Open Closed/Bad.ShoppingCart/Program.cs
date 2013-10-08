@@ -8,11 +8,8 @@
         {
             var shoppingCart = new ShoppingCart();
 
-            shoppingCart.Add(new CartItem());
-            shoppingCart.Add(new CartItem());
-            shoppingCart.Add(new CartItem());
-            shoppingCart.Add(new CartItem());
-            shoppingCart.Add(new CartItem());
+            for (int i = 0; i < 13; i++ )
+                shoppingCart.Add(new CartItem());
 
             Console.WriteLine("Discount is: {0}", shoppingCart.GetDiscountPercentage());
 

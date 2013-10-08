@@ -4,26 +4,26 @@
     using NUnit.Framework;
 
     [TestFixture]
-    public class DiscountRuleFifteenItemsTests
+    public class DiscountRuleFifteenOrMoreItemsTests
     {
-        private DiscountRuleFifteenItems _discountRuleFifteenItems;
+        private DiscountRuleFifteenOrMoreItems _discountRuleFifteenOrMoreItems;
 
         [SetUp]
         public void SetUp()
         {
-            _discountRuleFifteenItems = new DiscountRuleFifteenItems();
+            _discountRuleFifteenOrMoreItems = new DiscountRuleFifteenOrMoreItems();
         }
 
         [Test]
         public void Rule_should_not_apply_for_less_than_fifteen_items()
         {
-            Assert.False(_discountRuleFifteenItems.Match(14));
+            Assert.False(_discountRuleFifteenOrMoreItems.Match(14));
         }
 
         [Test]
         public void Rule_should_apply_for_fifteen_items()
         {
-            Assert.True(_discountRuleFifteenItems.Match(15));
+            Assert.True(_discountRuleFifteenOrMoreItems.Match(15));
         }
     }
 }
