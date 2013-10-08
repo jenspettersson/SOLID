@@ -13,22 +13,22 @@ namespace Bad.ShoppingCart
 
         public decimal GetDiscountPercentage()
         {
-            decimal ammount = 0;
+            decimal amount = 0;
 
             if (_items.Count >= 5 && _items.Count < 10)
             {
-                ammount = 10;
+                amount = 10;
             }
             else if (_items.Count >= 10 && _items.Count < 15)
             {
-                ammount = 15;
+                amount = 15;
             }
             else if (_items.Count >= 15)
             {
-                ammount = 25;
+                amount = 20;
             }
 
-            return ammount;
+            return amount;
         }
 
         public void Add(CartItem cartItem)
