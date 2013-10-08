@@ -15,12 +15,7 @@
         }
 
         [Test]
-        [TestCase(10)]
-        [TestCase(11)]
-        [TestCase(12)]
-        [TestCase(13)]
-        [TestCase(14)]
-        public void Rule_should_apply_for_ten_to_fourteen_items(int items)
+        public void Rule_should_apply_for_ten_to_fourteen_items([Range(10, 14)]int items)
         {
             Assert.True(_discountRuleTenItems.Match(items));
         }

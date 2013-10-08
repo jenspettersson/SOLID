@@ -15,12 +15,8 @@
         }
 
         [Test]
-        [TestCase(5)]
-        [TestCase(6)]
-        [TestCase(7)]
-        [TestCase(8)]
-        [TestCase(9)]
-        public void Rule_should_apply_for_five_to_nine_items(int items)
+        
+        public void Rule_should_apply_for_five_to_nine_items([Range(5, 9)]int items)
         {
             Assert.True(_discountRuleFiveItems.Match(items));
         }

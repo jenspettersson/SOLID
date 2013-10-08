@@ -14,7 +14,6 @@
             _discountRuleFifteenItems = new DiscountRuleFifteenItems();
         }
 
-
         [Test]
         public void Rule_should_not_apply_for_less_than_fifteen_items()
         {
