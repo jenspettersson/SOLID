@@ -3,38 +3,38 @@
     using NUnit.Framework;
 
     [TestFixture]
-    public class FrequencyManagerTests
+    public class FrequencyTests
     {
-        private FrequencyManager _frequencyManager;
+        private Frequency _frequency;
 
         [SetUp]
         public void SetUp()
         {
-            _frequencyManager = new FrequencyManager();
+            _frequency = new Frequency();
         }
 
         [Test]
         public void ChangeFrequencyTo_should_change_frequency_to_value_within_available_range()
         {
-            _frequencyManager.ChangeFrequencyTo(95.8m);
+            _frequency.ChangeTo(95.8m);
 
-            Assert.AreEqual(95.8m, _frequencyManager.Frequency);
+            Assert.AreEqual(95.8m, _frequency.CurrentFrequency);
         }
 
         [Test]
         public void Trying_to_set_frequency_higher_than_allowed_range_should_set_it_to_highest_frequency_allowed()
         {
-            _frequencyManager.ChangeFrequencyTo(999m);
+            _frequency.ChangeTo(999m);
 
-            Assert.AreEqual(108.9m, _frequencyManager.Frequency);
+            Assert.AreEqual(108.9m, _frequency.CurrentFrequency);
         }
 
         [Test]
         public void Trying_to_set_frequency_lower_than_allowed_range_should_set_it_to_lowest_frequency_allowed()
         {
-            _frequencyManager.ChangeFrequencyTo(5m);
+            _frequency.ChangeTo(5m);
 
-            Assert.AreEqual(87.0m, _frequencyManager.Frequency);
+            Assert.AreEqual(87.0m, _frequency.CurrentFrequency);
         }
     }
 }

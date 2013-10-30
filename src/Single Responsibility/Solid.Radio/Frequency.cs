@@ -1,19 +1,19 @@
 namespace Solid.Radio
 {
-    public class FrequencyManager
+    public class Frequency
     {
         private const decimal HighestFrequencyAllowed = 108.9m;
         private const decimal LowestFrequencyAllowed = 87.0m;
 
-        private decimal _frequency;
-        public decimal Frequency
+        private decimal _currentFrequency;
+        public decimal CurrentFrequency
         {
-            get { return _frequency; }
+            get { return _currentFrequency; }
         }
 
-        public void ChangeFrequencyTo(decimal frequency)
+        public void ChangeTo(decimal frequency)
         {
-            _frequency = CorrectFrequencyForAllowedRange(frequency);
+            _currentFrequency = CorrectFrequencyForAllowedRange(frequency);
         }
 
         private static decimal CorrectFrequencyForAllowedRange(decimal frequency)

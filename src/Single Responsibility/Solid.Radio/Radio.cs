@@ -2,28 +2,28 @@
 {
     public class Radio
     {
-        private readonly FrequencyManager _frequencyManager;
-        private readonly VolumeManager _volumeManager;
+        private readonly Frequency _frequency;
+        private readonly Volume _volume;
 
         public Radio()
         {
-            _frequencyManager = new FrequencyManager();
-            _volumeManager = new VolumeManager();
+            _frequency = new Frequency();
+            _volume = new Volume();
         }
         
         public void VolumeUp()
         {
-            _volumeManager.VolumeUp();
+            _volume.Up();
         }
 
         public void VolumeDown()
         {
-            _volumeManager.VolumeDown();
+            _volume.Down();
         }
 
         public void ChangeFrequency(decimal frequency)
         {
-            _frequencyManager.ChangeFrequencyTo(frequency);
+            _frequency.ChangeTo(frequency);
         }
     }
 }

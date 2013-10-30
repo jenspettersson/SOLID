@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,13 +52,13 @@
     <Compile Include="ShapesTests\SquareTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Solid.ShapeAreaPrinter\Solid.ShapeAreaPrinter.csproj">
       <Project>{966B7063-DA93-4453-9F00-CA6F806E7490}</Project>
       <Name>Solid.ShapeAreaPrinter</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
