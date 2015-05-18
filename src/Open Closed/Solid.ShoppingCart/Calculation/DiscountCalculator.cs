@@ -1,14 +1,14 @@
+using System.Collections.Generic;
+using System.Linq;
+using Solid.ShoppingCart.DiscountRules;
+
 namespace Solid.ShoppingCart.Calculation
 {
-    using System.Collections.Generic;
-    using System.Linq;
-    using DiscountRules;
-
     public class DiscountCalculator : IDiscountCalculator
     {
-        private readonly List<IDiscountRule> _discountRules;
+        private readonly IEnumerable<IDiscountRule> _discountRules;
 
-        public DiscountCalculator(List<IDiscountRule> discountRules)
+        public DiscountCalculator(IEnumerable<IDiscountRule> discountRules)
         {
             _discountRules = discountRules;
         }

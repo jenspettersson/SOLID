@@ -1,8 +1,7 @@
-﻿namespace Solid.ShoppingCart.Tests
-{
-    using Calculation;
-    using NUnit.Framework;
+﻿using NUnit.Framework;
 
+namespace Solid.ShoppingCart.Tests
+{
     [TestFixture]
     public class ShoppingCartTests
     {
@@ -11,7 +10,7 @@
         [SetUp]
         public void SetUp()
         {
-            _shoppingCart = new ShoppingCart(new DummyDiscountCalculator());
+            _shoppingCart = new ShoppingCart();
         }
 
         [Test]
@@ -30,15 +29,6 @@
             _shoppingCart.RemoveItem(cartItem);
 
             Assert.IsEmpty(_shoppingCart.CartItems);
-        }
-
-
-        private class DummyDiscountCalculator : IDiscountCalculator
-        {
-            public decimal Calculate(int itemCount)
-            {
-                return 100;
-            }
         }
     }
 }

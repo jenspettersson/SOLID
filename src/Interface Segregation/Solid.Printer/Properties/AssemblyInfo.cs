@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Bad.ShapeAreaPrinter")]
+[assembly: AssemblyTitle("Solid.Printer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Bad.ShapeAreaPrinter")]
+[assembly: AssemblyProduct("Solid.Printer")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("48d6cddb-a6be-42eb-b09d-6ec87cd3ba6b")]
+[assembly: Guid("daed58b5-b402-4a95-9f9e-0fb7de249092")]
 
 // Version information for an assembly consists of the following four values:
 //
