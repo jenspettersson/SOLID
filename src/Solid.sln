@@ -1,30 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E203CC04-EC8C-4764-8364-8ED3E2391716}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Single Responsibility Principle", "1. Single Responsibility Principle", "{51FF2BB6-C9D2-44DA-B8F9-309EDE5FB8DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bad.Radio", "Single Responsibility\Bad.Radio\Bad.Radio.csproj", "{19B04C63-6C38-4BA5-B8AF-E07471F17C25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bad.Radio", "Single Responsibility\Bad.Radio\Bad.Radio.csproj", "{19B04C63-6C38-4BA5-B8AF-E07471F17C25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Radio", "Single Responsibility\Solid.Radio\Solid.Radio.csproj", "{7CAC534E-8156-41C0-A5B1-11D777E2108A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.Radio", "Single Responsibility\Solid.Radio\Solid.Radio.csproj", "{7CAC534E-8156-41C0-A5B1-11D777E2108A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Radio.Tests", "Single Responsibility\Solid.Radio.Tests\Solid.Radio.Tests.csproj", "{6F879532-E6F9-4C87-A3C8-73CA31F26048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.Radio.Tests", "Single Responsibility\Solid.Radio.Tests\Solid.Radio.Tests.csproj", "{6F879532-E6F9-4C87-A3C8-73CA31F26048}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Open Closed Principle", "2. Open Closed Principle", "{395F1367-160E-4475-ABA8-5EFF1CD370B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bad.ShoppingCart", "Open Closed\Bad.ShoppingCart\Bad.ShoppingCart.csproj", "{FE3726BF-9A6A-4ED2-AD67-105162D132A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bad.ShoppingCart", "Open Closed\Bad.ShoppingCart\Bad.ShoppingCart.csproj", "{FE3726BF-9A6A-4ED2-AD67-105162D132A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.ShoppingCart", "Open Closed\Solid.ShoppingCart\Solid.ShoppingCart.csproj", "{52567B3E-BE35-4133-94D1-3F8773E2BF35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.ShoppingCart", "Open Closed\Solid.ShoppingCart\Solid.ShoppingCart.csproj", "{52567B3E-BE35-4133-94D1-3F8773E2BF35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.ShoppingCart.Tests", "Open Closed\Solid.ShoppingCart.Tests\Solid.ShoppingCart.Tests.csproj", "{30C25CD9-E63A-4683-95DD-260D9EBA7CCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.ShoppingCart.Tests", "Open Closed\Solid.ShoppingCart.Tests\Solid.ShoppingCart.Tests.csproj", "{30C25CD9-E63A-4683-95DD-260D9EBA7CCA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Interface Segregation Principle", "4. Interface Segregation Principle", "{11345FCC-E487-4A19-AF5C-A5352F60C780}"
 EndProject
@@ -36,21 +29,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.ShapeAreaPrinter.Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Dependency Inversion Principle", "5. Dependency Inversion Principle", "{1ABC689F-5C6E-464A-9F26-1D0480530E60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bad.DuckPond", "Liskov Substitution\Bad.DuckPond\Bad.DuckPond.csproj", "{28C66018-6DBA-47EC-97AC-9D2A729DC005}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bad.DuckPond.Runner", "Liskov Substitution\Bad.DuckPond.Runner\Bad.DuckPond.Runner.csproj", "{053E7593-B77E-4CC4-B6AA-91DAD5698D46}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bad.Banker", "Dependency Inversion\Bad.Banker\Bad.Banker.csproj", "{EE63353B-A9AC-4E0B-BD9C-56E9138F998B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bad.DuckPond", "Liskov Substitution\Bad.DuckPond\Bad.DuckPond.csproj", "{28C66018-6DBA-47EC-97AC-9D2A729DC005}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Banker", "Dependency Inversion\Solid.Banker\Solid.Banker.csproj", "{B47C299E-A295-480D-BAE7-13D642E26F6D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Banker.Runner", "Dependency Inversion\Solid.Banker.Runner\Solid.Banker.Runner.csproj", "{C0A80640-5AE4-41B0-8D09-B994ADC6A04F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bad.Printer", "Interface Segregation\Bad.Printer\Bad.Printer.csproj", "{621A39FC-FD9A-4706-8FB5-0E5998541F99}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Printer", "Interface Segregation\Solid.Printer\Solid.Printer.csproj", "{9E6C5A4B-ACC7-4E6D-AAA0-BBFD27CCA658}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bad.ShapeAreaPrinter", "Liskov Substitution\Bad.ShapeAreaPrinter\Bad.ShapeAreaPrinter.csproj", "{47DCC855-3838-4172-B61C-7EE53BC6C1C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bad.DuckPond.Runner", "Liskov Substitution\Bad.DuckPond.Runner\Bad.DuckPond.Runner.csproj", "{11A75ABC-C6F8-4F90-B101-992596DCB533}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bad.ShapeAreaPrinter", "Liskov Substitution\Bad.ShapeAreaPrinter\Bad.ShapeAreaPrinter.csproj", "{DB7C332C-B749-43DE-8D8D-1AFCE09AC65E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Banker.Runner", "Dependency Inversion\Solid.Banker.Runner\Solid.Banker.Runner.csproj", "{7BCFD5EC-5347-45CA-A498-1D0343C37F80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bad.Banker", "Dependency Inversion\Bad.Banker\Bad.Banker.csproj", "{961B035F-2311-42A0-ABD2-6DA7BA8A395F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,22 +87,10 @@ Global
 		{28C66018-6DBA-47EC-97AC-9D2A729DC005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28C66018-6DBA-47EC-97AC-9D2A729DC005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28C66018-6DBA-47EC-97AC-9D2A729DC005}.Release|Any CPU.Build.0 = Release|Any CPU
-		{053E7593-B77E-4CC4-B6AA-91DAD5698D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{053E7593-B77E-4CC4-B6AA-91DAD5698D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{053E7593-B77E-4CC4-B6AA-91DAD5698D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{053E7593-B77E-4CC4-B6AA-91DAD5698D46}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE63353B-A9AC-4E0B-BD9C-56E9138F998B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE63353B-A9AC-4E0B-BD9C-56E9138F998B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE63353B-A9AC-4E0B-BD9C-56E9138F998B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE63353B-A9AC-4E0B-BD9C-56E9138F998B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B47C299E-A295-480D-BAE7-13D642E26F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B47C299E-A295-480D-BAE7-13D642E26F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B47C299E-A295-480D-BAE7-13D642E26F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B47C299E-A295-480D-BAE7-13D642E26F6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0A80640-5AE4-41B0-8D09-B994ADC6A04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0A80640-5AE4-41B0-8D09-B994ADC6A04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0A80640-5AE4-41B0-8D09-B994ADC6A04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0A80640-5AE4-41B0-8D09-B994ADC6A04F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{621A39FC-FD9A-4706-8FB5-0E5998541F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{621A39FC-FD9A-4706-8FB5-0E5998541F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{621A39FC-FD9A-4706-8FB5-0E5998541F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -118,10 +99,22 @@ Global
 		{9E6C5A4B-ACC7-4E6D-AAA0-BBFD27CCA658}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E6C5A4B-ACC7-4E6D-AAA0-BBFD27CCA658}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E6C5A4B-ACC7-4E6D-AAA0-BBFD27CCA658}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47DCC855-3838-4172-B61C-7EE53BC6C1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47DCC855-3838-4172-B61C-7EE53BC6C1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47DCC855-3838-4172-B61C-7EE53BC6C1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47DCC855-3838-4172-B61C-7EE53BC6C1C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A75ABC-C6F8-4F90-B101-992596DCB533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A75ABC-C6F8-4F90-B101-992596DCB533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A75ABC-C6F8-4F90-B101-992596DCB533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A75ABC-C6F8-4F90-B101-992596DCB533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB7C332C-B749-43DE-8D8D-1AFCE09AC65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB7C332C-B749-43DE-8D8D-1AFCE09AC65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB7C332C-B749-43DE-8D8D-1AFCE09AC65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB7C332C-B749-43DE-8D8D-1AFCE09AC65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BCFD5EC-5347-45CA-A498-1D0343C37F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BCFD5EC-5347-45CA-A498-1D0343C37F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BCFD5EC-5347-45CA-A498-1D0343C37F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BCFD5EC-5347-45CA-A498-1D0343C37F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961B035F-2311-42A0-ABD2-6DA7BA8A395F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961B035F-2311-42A0-ABD2-6DA7BA8A395F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961B035F-2311-42A0-ABD2-6DA7BA8A395F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961B035F-2311-42A0-ABD2-6DA7BA8A395F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,12 +129,15 @@ Global
 		{966B7063-DA93-4453-9F00-CA6F806E7490} = {FD804256-5393-413E-8333-09C32106613C}
 		{A1099CBA-0CBB-41C8-B028-EA1AF1080914} = {FD804256-5393-413E-8333-09C32106613C}
 		{28C66018-6DBA-47EC-97AC-9D2A729DC005} = {FD804256-5393-413E-8333-09C32106613C}
-		{053E7593-B77E-4CC4-B6AA-91DAD5698D46} = {FD804256-5393-413E-8333-09C32106613C}
-		{EE63353B-A9AC-4E0B-BD9C-56E9138F998B} = {1ABC689F-5C6E-464A-9F26-1D0480530E60}
 		{B47C299E-A295-480D-BAE7-13D642E26F6D} = {1ABC689F-5C6E-464A-9F26-1D0480530E60}
-		{C0A80640-5AE4-41B0-8D09-B994ADC6A04F} = {1ABC689F-5C6E-464A-9F26-1D0480530E60}
 		{621A39FC-FD9A-4706-8FB5-0E5998541F99} = {11345FCC-E487-4A19-AF5C-A5352F60C780}
 		{9E6C5A4B-ACC7-4E6D-AAA0-BBFD27CCA658} = {11345FCC-E487-4A19-AF5C-A5352F60C780}
-		{47DCC855-3838-4172-B61C-7EE53BC6C1C0} = {FD804256-5393-413E-8333-09C32106613C}
+		{11A75ABC-C6F8-4F90-B101-992596DCB533} = {FD804256-5393-413E-8333-09C32106613C}
+		{DB7C332C-B749-43DE-8D8D-1AFCE09AC65E} = {FD804256-5393-413E-8333-09C32106613C}
+		{7BCFD5EC-5347-45CA-A498-1D0343C37F80} = {1ABC689F-5C6E-464A-9F26-1D0480530E60}
+		{961B035F-2311-42A0-ABD2-6DA7BA8A395F} = {1ABC689F-5C6E-464A-9F26-1D0480530E60}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD8FDC32-4CFF-47D5-A431-488660082889}
 	EndGlobalSection
 EndGlobal

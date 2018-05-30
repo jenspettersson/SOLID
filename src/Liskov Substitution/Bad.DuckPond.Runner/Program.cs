@@ -1,14 +1,11 @@
-﻿namespace Bad.DuckPond.Runner
-{
-    using System.Collections.Generic;
-    using System.Linq;
-    using NUnit.Framework;
+﻿using System.Collections.Generic;
+using System.Linq;
 
-    [TestFixture, Explicit("This is just an example runner")]
-    public class PondRunner
+namespace Bad.DuckPond.Runner
+{
+    class Program
     {
-        [Test]
-        public void MakeAllDucksSwim()
+        static void Main(string[] args)
         {
             var pond = new Pond();
 
@@ -20,10 +17,9 @@
             pond.AddDuck(new MechanicalDuck());
             pond.AddDuck(new MechanicalDuck());
             pond.AddDuck(new MechanicalDuck());
-
+            
             pond.MakeAllDucksSwim();
-
-
+            
             List<IDuck> swimmingDucks = pond.Ducks.Where(x => x.IsSwimming).ToList();
         }
     }

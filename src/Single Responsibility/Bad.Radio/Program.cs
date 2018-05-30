@@ -14,7 +14,7 @@
             badRadio.VolumeUp();
             badRadio.VolumeUp();
 
-            Console.Write("Volume is: {0}", badRadio.CurrentVolume);
+            Console.WriteLine("Volume is: {0}", badRadio.CurrentVolume);
         }
     }
 }

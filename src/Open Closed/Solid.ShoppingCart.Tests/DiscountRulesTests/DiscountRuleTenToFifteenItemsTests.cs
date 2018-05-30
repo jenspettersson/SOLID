@@ -1,38 +1,42 @@
-﻿namespace Solid.ShoppingCart.Tests.DiscountRulesTests
-{
-    using DiscountRules;
-    using NUnit.Framework;
+﻿using System.ComponentModel.DataAnnotations;
+using Solid.ShoppingCart.DiscountRules;
+using Xunit;
 
-    [TestFixture]
+namespace Solid.ShoppingCart.Tests.DiscountRulesTests
+{
     public class DiscountRuleTenToFifteenItemsTests
     {
         private DiscountRuleTenToFifteenItems _discountRuleTenToFifteenItems;
 
-        [SetUp]
-        public void SetUp()
+        public DiscountRuleTenToFifteenItemsTests()
         {
             _discountRuleTenToFifteenItems = new DiscountRuleTenToFifteenItems();
         }
 
-        [Test]
+        [Fact]
         public void The_DiscountAmount_should_be_fifteen_percent()
         {
-            Assert.AreEqual(15, _discountRuleTenToFifteenItems.DiscountAmount);
+            Assert.Equal(15, _discountRuleTenToFifteenItems.DiscountAmount);
         }
 
-        [Test]
-        public void Rule_should_apply_for_ten_up_to_fourteen_items([Range(10, 14)]int items)
+        [Theory]
+        [InlineData(10)]
+        [InlineData(11)]
+        [InlineData(12)]
+        [InlineData(13)]
+        [InlineData(14)]
+        public void Rule_should_apply_for_ten_up_to_fourteen_items(int items)
         {
             Assert.True(_discountRuleTenToFifteenItems.Match(items));
         }
 
-        [Test]
+        [Fact]
         public void Rule_should_not_apply_for_less_than_ten_items()
         {
             Assert.False(_discountRuleTenToFifteenItems.Match(9));
         }
 
-        [Test]
+        [Fact]
         public void Rule_should_not_apply_for_more_than_fourteen_items()
         {
             Assert.False(_discountRuleTenToFifteenItems.Match(15));

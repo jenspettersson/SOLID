@@ -1,12 +1,8 @@
-﻿using NUnit.Framework;
-
-namespace Bad.ShapeAreaPrinter
+﻿namespace Bad.ShapeAreaPrinter
 {
-    [TestFixture, Explicit]
-    public class Runner
+    class Program
     {
-        [Test]
-        public void Run_BadShapePrinter_Example()
+        static void Main(string[] args)
         {
             var badPrinter = new ShapePrinter();
 

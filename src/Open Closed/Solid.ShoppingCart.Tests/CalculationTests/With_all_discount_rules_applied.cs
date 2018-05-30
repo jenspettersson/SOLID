@@ -1,37 +1,36 @@
-﻿namespace Solid.ShoppingCart.Tests.CalculationTests
-{
-    using System.Collections.Generic;
-    using Calculation;
-    using DiscountRules;
-    using NUnit.Framework;
+﻿using System.Collections.Generic;
+using Solid.ShoppingCart.Calculation;
+using Solid.ShoppingCart.DiscountRules;
+using Xunit;
 
-    [TestFixture]
+
+namespace Solid.ShoppingCart.Tests.CalculationTests
+{
     public class With_all_discount_rules_applied
     {
         private DiscountCalculator _discountCalculator;
 
-        [SetUp]
-        public void SetUp()
+        public With_all_discount_rules_applied()
         {
             _discountCalculator = new DiscountCalculator(new List<IDiscountRule>
-                {
-                    new DiscountRuleFiveToTenItems(),
-                    new DiscountRuleTenToFifteenItems()
-                });
+            {
+                new DiscountRuleFiveToTenItems(),
+                new DiscountRuleTenToFifteenItems()
+            });
         }
-
-        [Test]
+        
+        [Fact]
         public void Five_items_should_give_ten_percent_discount()
         {
             decimal discount = _discountCalculator.Calculate(5);
-            Assert.AreEqual(10m, discount);
+            Assert.Equal(10m, discount);
         }
 
-        [Test]
+        [Fact]
         public void Ten_items_should_give_fifteen_percent_discount()
         {
             decimal discount = _discountCalculator.Calculate(10);
-            Assert.AreEqual(15m, discount);
+            Assert.Equal(15m, discount);
         }
     }
 }

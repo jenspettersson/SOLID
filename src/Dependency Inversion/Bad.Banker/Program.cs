@@ -1,10 +1,10 @@
-﻿namespace Bad.Banker
-{
-    using System;
+﻿using System;
 
+namespace Bad.Banker
+{
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
             var banker = new Banker();
 
