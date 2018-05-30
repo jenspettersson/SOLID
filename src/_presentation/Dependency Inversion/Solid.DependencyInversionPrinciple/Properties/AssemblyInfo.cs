@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Solid.ShapeAreaPrinter.Tests")]
+[assembly: AssemblyTitle("Solid.DependencyInversionPrinciple")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Solid.ShapeAreaPrinter.Tests")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyProduct("Solid.DependencyInversionPrinciple")]
+[assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("781a8040-79ea-4e40-bd3a-187a2e6f096d")]
+[assembly: Guid("cb9042b0-eecd-4ffd-ac08-23d9be958d96")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -43,9 +43,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.Banker.Runner", "Depe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bad.Banker", "Dependency Inversion\Bad.Banker\Bad.Banker.csproj", "{961B035F-2311-42A0-ABD2-6DA7BA8A395F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.ShapeAreaPrinter.Tests", "Liskov Substitution\Solid.ShapeAreaPrinter.Tests\Solid.ShapeAreaPrinter.Tests.csproj", "{4FBA1A7F-6EBF-45EE-B2E6-0117BFA537D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.ShapeAreaPrinter.Tests", "Liskov Substitution\Solid.ShapeAreaPrinter.Tests\Solid.ShapeAreaPrinter.Tests.csproj", "{2FA218B3-9614-4B02-B919-359EA26A4359}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.ShapeAreaPrinter.Runner", "Liskov Substitution\Solid.ShapeAreaPrinter.Runner\Solid.ShapeAreaPrinter.Runner.csproj", "{9DEF702E-0548-41CD-A971-1D3883DA8BFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.ShapeAreaPrinter.Runner", "Liskov Substitution\Solid.ShapeAreaPrinter.Runner\Solid.ShapeAreaPrinter.Runner.csproj", "{B5A040AC-54D2-4336-B2DD-8575E2545AAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,14 +113,14 @@ Global
 		{961B035F-2311-42A0-ABD2-6DA7BA8A395F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{961B035F-2311-42A0-ABD2-6DA7BA8A395F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{961B035F-2311-42A0-ABD2-6DA7BA8A395F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4FBA1A7F-6EBF-45EE-B2E6-0117BFA537D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FBA1A7F-6EBF-45EE-B2E6-0117BFA537D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FBA1A7F-6EBF-45EE-B2E6-0117BFA537D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FBA1A7F-6EBF-45EE-B2E6-0117BFA537D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9DEF702E-0548-41CD-A971-1D3883DA8BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9DEF702E-0548-41CD-A971-1D3883DA8BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9DEF702E-0548-41CD-A971-1D3883DA8BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9DEF702E-0548-41CD-A971-1D3883DA8BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA218B3-9614-4B02-B919-359EA26A4359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA218B3-9614-4B02-B919-359EA26A4359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA218B3-9614-4B02-B919-359EA26A4359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA218B3-9614-4B02-B919-359EA26A4359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A040AC-54D2-4336-B2DD-8575E2545AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A040AC-54D2-4336-B2DD-8575E2545AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A040AC-54D2-4336-B2DD-8575E2545AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A040AC-54D2-4336-B2DD-8575E2545AAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,8 +141,8 @@ Global
 		{DB7C332C-B749-43DE-8D8D-1AFCE09AC65E} = {FD804256-5393-413E-8333-09C32106613C}
 		{7BCFD5EC-5347-45CA-A498-1D0343C37F80} = {1ABC689F-5C6E-464A-9F26-1D0480530E60}
 		{961B035F-2311-42A0-ABD2-6DA7BA8A395F} = {1ABC689F-5C6E-464A-9F26-1D0480530E60}
-		{4FBA1A7F-6EBF-45EE-B2E6-0117BFA537D3} = {FD804256-5393-413E-8333-09C32106613C}
-		{9DEF702E-0548-41CD-A971-1D3883DA8BFD} = {FD804256-5393-413E-8333-09C32106613C}
+		{2FA218B3-9614-4B02-B919-359EA26A4359} = {FD804256-5393-413E-8333-09C32106613C}
+		{B5A040AC-54D2-4336-B2DD-8575E2545AAC} = {FD804256-5393-413E-8333-09C32106613C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD8FDC32-4CFF-47D5-A431-488660082889}

@@ -1,18 +1,17 @@
-﻿namespace Solid.ShapeAreaPrinter.Tests.ShapesTests
-{
-    using NUnit.Framework;
-    using Shapes;
+﻿using Solid.ShapeAreaPrinter.Shapes;
+using Xunit;
 
-    [TestFixture]
+namespace Solid.ShapeAreaPrinter.Tests.ShapesTests
+{
     public class SquareTests
     {
-        [Test]
+        [Fact]
         public void Area_should_be_side_length_times_two()
         {
             var square = new Square {SideLength = 5};
             var area = square.GetArea();
 
-            Assert.AreEqual(25, area);
+            Assert.Equal(25, area);
         }
     }
 }

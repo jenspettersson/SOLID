@@ -1,18 +1,17 @@
-﻿namespace Solid.ShapeAreaPrinter.Tests.ShapesTests
-{
-    using NUnit.Framework;
-    using Shapes;
+﻿using Solid.ShapeAreaPrinter.Shapes;
+using Xunit;
 
-    [TestFixture]
+namespace Solid.ShapeAreaPrinter.Tests.ShapesTests
+{
     public class RectangleTests
     {
-        [Test]
+        [Fact]
         public void Area_should_be_height_times_length()
         {
             var rectangle = new Rectangle {Height = 10, Length = 5};
             var area = rectangle.GetArea();
 
-            Assert.AreEqual(50, area);
+            Assert.Equal(50, area);
         }
     }
 }

@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Solid.ShapeAreaPrinter\Solid.ShapeAreaPrinter.csproj" />
+    <ProjectReference Include="..\Solid.ShoppingCart\Solid.ShoppingCart.csproj" />
   </ItemGroup>
+
 </Project>
