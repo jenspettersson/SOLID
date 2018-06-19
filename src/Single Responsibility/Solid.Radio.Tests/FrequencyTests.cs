@@ -24,7 +24,7 @@ namespace Solid.Radio.Tests
         {
             _frequency.ChangeTo(999m);
 
-            Assert.Equal(108.9m, _frequency.CurrentFrequency);
+            Assert.Equal(108m, _frequency.CurrentFrequency);
         }
 
         [Fact]
@@ -32,7 +32,7 @@ namespace Solid.Radio.Tests
         {
             _frequency.ChangeTo(5m);
 
-            Assert.Equal(87.0m, _frequency.CurrentFrequency);
+            Assert.Equal(87.5m, _frequency.CurrentFrequency);
         }
     }
 }

@@ -16,8 +16,8 @@
 
         public void ChangeStation(double frequency)
         {
-            if (frequency > 108.9)
-                frequency = 87.0;
+            if (frequency > 108)
+                frequency = 87.5;
 
             _currentFrequency = frequency;
         }
