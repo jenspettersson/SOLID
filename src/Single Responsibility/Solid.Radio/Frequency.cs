@@ -2,8 +2,8 @@ namespace Solid.Radio
 {
     public class Frequency
     {
-        private const decimal HighestFrequencyAllowed = 108.9m;
-        private const decimal LowestFrequencyAllowed = 87.0m;
+        private const decimal HighestFrequencyAllowed = 108m;
+        private const decimal LowestFrequencyAllowed = 87.5m;
 
         private decimal _currentFrequency;
         public decimal CurrentFrequency
