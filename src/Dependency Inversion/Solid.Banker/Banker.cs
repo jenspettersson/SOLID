@@ -1,18 +1,14 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Solid.Banker
 {
-    using System.Collections.Generic;
-    using System.Linq;
-    using Logging;
-
     public class Banker
     {
-        private readonly ILogger _logger;
         private readonly List<Account> _accounts;
 
-        public Banker(ILogger logger)
+        public Banker()
         {
-            _logger = logger;
-
             #region Persistance stuff
 
             var accountOne = new Account("12345");
@@ -58,7 +54,7 @@ namespace Solid.Banker
 
         private void Log(string message, params object[] param)
         {
-            _logger.Log(message, param);
+            //Todo: Implement SOLID logging
         }
     }
 }
