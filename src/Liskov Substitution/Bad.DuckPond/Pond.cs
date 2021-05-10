@@ -24,10 +24,6 @@
         {
             foreach (var duck in _ducks)
             {
-                //This breaks the Liskov Substitution Principle!
-                if(duck is MechanicalDuck)
-                    ((MechanicalDuck)duck).WindUp();
-
                 duck.Swim();
             }
         }

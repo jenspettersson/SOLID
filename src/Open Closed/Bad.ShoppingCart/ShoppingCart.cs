@@ -17,11 +17,11 @@ namespace Bad.ShoppingCart
 
             if (_items.Count >= 5 && _items.Count < 10)
             {
-                amount = 10;
+                amount = 0.1m;
             }
             else if (_items.Count >= 10 && _items.Count < 15)
             {
-                amount = 15;
+                amount = 0.15m;
             }
 
             return amount;
