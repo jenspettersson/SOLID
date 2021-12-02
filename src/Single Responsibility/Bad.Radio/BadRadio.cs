@@ -14,24 +14,27 @@
             get { return _currentVolume; }
         }
 
-        public void ChangeStation(double frequency)
-        {
-            if (frequency > 108)
-                frequency = 87.5;
-
-            _currentFrequency = frequency;
-        }
-
         public void VolumeUp()
         {
-            if(_currentVolume < 10)
+            if(_currentVolume < 11)
                 _currentVolume++;
         }
 
         public void VolumeDown()
         {
-            if(CurrentFrequency > 0)
+            if(CurrentVolume > 0)
                 _currentVolume--;
+        }
+
+        public void ChangeFrequency(double frequency)
+        {
+            if (frequency > 108)
+                frequency = 108;
+
+            if (frequency < 87.5)
+                frequency = 87.5;
+
+            _currentFrequency = frequency;
         }
     }
 }

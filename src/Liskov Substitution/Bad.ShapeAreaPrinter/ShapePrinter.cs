@@ -14,8 +14,15 @@ namespace Bad.ShapeAreaPrinter
                 area = GetCircleArea((Circle) shape);
             if (shape is Rectangle)
                 area = GetRectangleArea((Rectangle) shape);
+            if (shape is Triangle) 
+                area = GetTriangleArea((Triangle)shape);
 
             Console.WriteLine("Area is: {0}", area);
+        }
+
+        private double GetTriangleArea(Triangle shape)
+        {
+            return (shape.Base * shape.Height) / 2;
         }
 
         private double GetRectangleArea(Rectangle rectangle)

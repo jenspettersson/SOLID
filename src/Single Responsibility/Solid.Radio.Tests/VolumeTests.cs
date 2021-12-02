@@ -1,60 +1,62 @@
-﻿using Xunit;
+﻿using FluentAssertions;
+using Xunit;
 
 namespace Solid.Radio.Tests
 {
     public class VolumeTests
     {
-        //private Volume _volume;
+        private Volume _volume;
 
-        //public VolumeTests()
-        //{
-        //    _volume = new Volume();
-        //}
+        public VolumeTests()
+        {
+            _volume = new Volume();
+        }
 
-        //[Fact]
-        //public void Default_volume_should_be_set_to_5()
-        //{
-        //    Assert.Equal(5, _volume.CurrentVolume);
-        //}
+        [Fact]
+        public void Default_volume_should_be_set_to_5()
+        {
+            _volume.Value.Should().Be(5);
+        }
 
-        //[Fact]
-        //public void VolumeUp_should_raise_volume_one_level()
-        //{
-        //    _volume.Up();
-        //    Assert.Equal(6, _volume.CurrentVolume);
-        //}
+        [Fact]
+        public void VolumeUp_should_raise_volume_one_level()
+        {
+            _volume.Up();
+            _volume.Value.Should().Be(6);
+        }
 
-        //[Fact]
-        //public void VolumeDome_should_lower_volume_one_level()
-        //{
-        //    _volume.Down();
-        //    Assert.Equal(4, _volume.CurrentVolume);
-        //}
+        [Fact]
+        public void VolumeDown_should_lower_volume_one_level()
+        {
+            _volume.Down();
+            _volume.Value.Should().Be(4);
+        }
 
-        //[Fact]
-        //public void Should_not_be_able_to_raise_volume_over_max_allowed_volume()
-        //{
-        //    _volume.Up();
-        //    _volume.Up();
-        //    _volume.Up();
-        //    _volume.Up();
-        //    _volume.Up();
-        //    _volume.Up();
+        [Fact]
+        public void Should_not_be_able_to_raise_volume_over_max_allowed_volume()
+        {
+            _volume.Up();
+            _volume.Up();
+            _volume.Up();
+            _volume.Up();
+            _volume.Up();
+            
+            _volume.Up(); //11
+            _volume.Value.Should().Be(10);
+        }
 
-        //    Assert.Equal(10, _volume.CurrentVolume);
-        //}
-
-        //[Fact]
-        //public void Should_not_be_able_to_lower_volume_lower_than_zero()
-        //{
-        //    _volume.Down();
-        //    _volume.Down();
-        //    _volume.Down();
-        //    _volume.Down();
-        //    _volume.Down();
-        //    _volume.Down();
-
-        //    Assert.Equal(0, _volume.CurrentVolume);
-        //}
+        [Fact]
+        public void Should_not_be_able_to_lower_volume_lower_than_zero()
+        {
+            _volume.Down();
+            _volume.Down();
+            _volume.Down();
+            _volume.Down();
+            _volume.Down();
+            _volume.Down();
+            
+            _volume.Down(); //-1
+            _volume.Value.Should().Be(0);
+        }
     }
 }

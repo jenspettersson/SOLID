@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace Bad.Banker
 {
     using System;
@@ -6,10 +8,20 @@ namespace Bad.Banker
 
     public class Banker
     {
+        private readonly bool _useMessageBoxLogger;
+        private readonly bool _useConsoleLogger;
+        private readonly bool _useScreamingLogger;
         private readonly List<Account> _accounts;
 
-        public Banker()
+        public Banker(
+            bool useMessageBoxLogger, 
+            bool useConsoleLogger,
+            bool useScreamingLogger)
         {
+            _useMessageBoxLogger = useMessageBoxLogger;
+            _useConsoleLogger = useConsoleLogger;
+            _useScreamingLogger = useScreamingLogger;
+
             #region Persistance stuff
 
             var accountOne = new Account("12345");
@@ -32,8 +44,8 @@ namespace Bad.Banker
             Account account = GetAccount(socialSecurityNumber);
 
             account.Deposit(amount);
-
-            Console.WriteLine("Depositing {0} to account {1}", amount, account.SocialSecurityNumber);
+            
+            Log($"Depositing {amount} to account {account.SocialSecurityNumber}");
         }
 
         public void Withdraw(string socialSecurityNumber, decimal amount)
@@ -41,15 +53,31 @@ namespace Bad.Banker
             var account = GetAccount(socialSecurityNumber);
             account.Withdraw(amount);
 
-            Console.WriteLine("Withdrawing {0} from account {1}", amount, account.SocialSecurityNumber);
+            Log($"Withdrawing {amount} from account {account.SocialSecurityNumber}");
         }
 
         private Account GetAccount(string socialSecurityNumber)
         {
-            Console.WriteLine("Trying to find account by SSC: {0}", socialSecurityNumber);
+            Log($"Trying to find account by SSC: {socialSecurityNumber}");
             var account = _accounts.FirstOrDefault(x => x.SocialSecurityNumber == socialSecurityNumber);
 
             return account;
+        }
+
+        private void Log(string message)
+        {
+            if (_useScreamingLogger)
+            {
+                message = message.ToUpper();
+            }
+            if (_useMessageBoxLogger)
+            {
+                MessageBox.Show(message);    
+            }
+            if(_useConsoleLogger)
+            {
+                Console.WriteLine(message);    
+            }
         }
     }
 }

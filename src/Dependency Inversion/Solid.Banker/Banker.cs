@@ -1,15 +1,19 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Solid.Banker.Logging;
 
 namespace Solid.Banker
 {
     public class Banker
     {
+        private readonly ILogger _logger;
         private readonly List<Account> _accounts;
 
-        public Banker()
-        { 
+        public Banker(ILogger logger)
+        {
+            _logger = logger;
+
             #region Persistance stuff
 
             var accountOne = new Account("12345");
@@ -34,7 +38,7 @@ namespace Solid.Banker
 
             account.Deposit(amount);
 
-            Log("Depositing {0} to account {1}", amount, account.SocialSecurityNumber);
+            Log($"Depositing {amount} to account {account.SocialSecurityNumber}");
         }
 
         public void Withdraw(string socialSecurityNumber, decimal amount)
@@ -42,20 +46,20 @@ namespace Solid.Banker
             var account = GetAccount(socialSecurityNumber);
             account.Withdraw(amount);
 
-            Log("Withdrawing {0} from account {1}", amount, account.SocialSecurityNumber);
+            Log($"Withdrawing {amount} from account {account.SocialSecurityNumber}");
         }
 
         private Account GetAccount(string socialSecurityNumber)
         {
-            Log("Trying to find account by SSC: {0}", socialSecurityNumber);
+            Log($"Trying to find account by SSC: {socialSecurityNumber}");
             var account = _accounts.FirstOrDefault(x => x.SocialSecurityNumber == socialSecurityNumber);
 
             return account;
         }
 
-        private void Log(string message, params object[] param)
+        private void Log(string message)
         {
-            Console.WriteLine(message, param);
+            _logger.Log(message);
         }
     }
 }

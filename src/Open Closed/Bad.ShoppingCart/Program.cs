@@ -13,6 +13,24 @@
             shoppingCart.Add(new CartItem());
             shoppingCart.Add(new CartItem());
             shoppingCart.Add(new CartItem());
+            
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
+            shoppingCart.Add(new CartItem());
 
             Console.WriteLine("Discount is: {0:P0}", shoppingCart.GetDiscountPercentage());
 
